@@ -1,0 +1,1 @@
+This is a custom WordPress theme for the blog: www.notyourmommysblog.com

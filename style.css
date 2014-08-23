@@ -1,0 +1,353 @@
+/*
+Theme Name: Tiles
+Author: D'Errico Web Design
+Author URI: http://www.derricowebdesign.com
+Description: A responsive tile-based theme design
+Version: 1.0
+*/
+
+/*
+Color scheme:
+light        { color: #7FA4C0 }
+medium-light { color: #507C9D }
+medium       { color: #346388 }	
+medium-dark  { color: #1F4F74 }
+dark         { color: #0E3A5C }
+*/
+
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    margin:0px;
+    background-color:#052136;
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+    margin-top:0px;
+    color:black;
+}
+
+.dark h1, 
+.dark h2, 
+.dark h3,  
+.dark h4,  
+.dark h5,  
+.dark h6,  
+.dark p,  
+.dark ul,  
+.dark ol,  
+.dark li {
+    color:white;
+}
+
+a {
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+a:link {
+    color:#346388;
+}
+
+a:visited {
+    color:#346388;
+}
+
+.dark a:link {
+    color:#7FA4C0;
+}
+
+.dark a:visited {
+    color:#7FA4C0;
+}
+
+.pageWrapper {
+    width:1024px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+.headerImage {
+    width:1024px;
+    display:block;
+}
+
+.tileSection {
+    width:1024px;
+    height:170px;
+    padding-top:15px;
+    padding-bottom:15px;
+    background-color:#0E3A5C;
+}
+
+.stickyTileSection {
+    display:inline-block;
+    width:256px;
+    height:170px;
+}
+
+.sliderTileSection {
+    display:inline-block;
+    width:759px;
+    margin-left:5px;
+    height:170px;
+    white-space:nowrap;
+    overflow:hidden;
+    position:relative;
+}
+
+.sliderButtonLeft {
+    width:50px;
+    height:160px;
+    margin-top:5px;
+    margin-bottom:5px;
+    position:absolute;
+    background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1));
+    border-radius: 20px 0px 0px 20px;
+    opacity:.25;
+    z-index:1
+}
+
+.sliderButtonRight {
+    width:50px;
+    height:160px;
+    margin-top:5px;
+    margin-bottom:5px;
+    background: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+    position:absolute;
+    right:0px;
+    text-align:right;
+    opacity:.25;
+    z-index:1
+}
+
+.triangleLeft {
+    width:0px;
+    height:0px;
+    border-top: 25px solid transparent;
+    border-right: 30px solid white;
+    border-bottom: 25px solid transparent;
+    margin-top:60px;
+    margin-left:3px;
+    display:inline-block;
+}
+
+.triangleRight {
+    width:0px;
+    height:0px;
+    border-top: 25px solid transparent;
+    border-left: 30px solid white;
+    border-bottom: 25px solid transparent;
+    margin-top:60px;
+    margin-right:3px;
+    display:inline-block;
+}
+
+.tile {
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size:249px;
+    border-radius:20px;
+    display:inline-block;
+    width:249px;
+    height:158px;
+    border:1px solid black;
+    margin:5px;
+    margin-left:2.5px;
+    margin-right:2.5px;
+    overflow:hidden;
+    white-space:nowrap;
+    position:relative;
+    cursor:pointer;
+}
+
+.tile:hover {
+    border:1px solid #7FA4C0;
+}
+
+.tileOverlay {
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color:rgba(0,0,0,.5);
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+    width:249px;
+    height:78px;
+    padding-left:5px;
+    padding-top:5px;
+}
+
+.tileOverlay > .tileExcerpt {
+    display:none;
+}
+
+
+.tileWide {
+    width:368px;
+    background-size:368px;
+}
+
+.tileWide > .tileOverlay {
+    margin:0px;
+    width:368px;
+    height:158px;
+}
+
+.tileWide > .tileOverlay > .tileExcerpt {
+    display:block;
+    white-space:normal;
+    font-size:.9em;
+    padding-top:8px;
+}
+
+.tile h1, .tile p {
+    color:white;
+    margin-bottom:0px;
+}
+
+.tile h1 {
+    font-size:1.75em;
+}
+
+.body {
+    display:table-row;
+}
+
+.sidebar {
+    width:236px;
+    background-color:#0E3A5C;
+    display:table-cell;
+    padding:15px;
+}
+
+.sidebar ul {
+    list-style:none;
+    padding:0px;
+}
+
+.sidebarHeading {
+    font-size:1.5em;
+    margin-bottom:5px;
+}
+
+.sidebar li {
+    padding-left:10px;
+}
+
+.content {
+    display:table-cell;
+    background-color:white;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.summary {
+    margin-bottom:50px;
+}
+
+.summaryTitle {
+    font-size:2.5em;
+    font-weight:normal;
+}
+
+.singleTitle {
+    font-size:2.5em;
+    font-weight:normal;
+}
+
+.summaryImage {
+    width:150px;
+    float:left;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+
+.singleImage {
+    width:300px;
+    float:left;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+
+.summaryDate {
+    font-style:italic;
+    margin:0px;
+}
+
+.singleDate {
+    font-style:italic;
+    margin:0px;
+}
+
+
+.summaryTags {
+    margin:0px;
+}
+
+.pageNav {
+    position:relative;
+    height:1em;
+    margin-bottom:1em;
+}
+
+.pageNavPrevious {
+    display:inline-block;
+    position:absolute;
+}
+
+.pageNavNext {
+    display:inline-block;
+    position:absolute;
+    right:0px;
+}
+
+.comments {
+    width:100%;
+    border-top:1px dashed black;
+    padding-top:1em;
+}
+
+.commentsList, .children {
+    list-style:none;
+    padding-left:20px;
+}
+
+.comment-body {
+    border-bottom:1px dotted black;
+    padding-top:1em;
+    padding-bottom:1em;
+}
+
+.comment p {
+    margin:0px;
+}
+
+.comment-respond {
+    border:1px solid #ccc;
+    padding:10px;
+    border-radius:10px;
+}
+
+#comment {
+    display:block;
+}
+
+
+
+.commentsClosed {
+    font-style:italic;
+    color:#aaa;
+}
+
+.footer {
+    background-color:#052136;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+}
