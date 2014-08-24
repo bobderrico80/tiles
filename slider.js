@@ -65,12 +65,3 @@ $(".sliderButtonRight").mouseenter(function(){
 $(".sliderButtonRight").mouseleave(function(){
     $(this).animate({opacity:0.25},200);
 });
-
-//Swipes
-$(".tile").on("swiperight",function(){
-    $(".sliderButtonRight").click();
-});
-
-$(".tile").on("swipeleft",function(){
-    $(".sliderButtonLeft").click();
-});

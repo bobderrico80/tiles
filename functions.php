@@ -2,7 +2,7 @@
 add_theme_support( 'post-thumbnails' );
 
 function custom_excerpt_length() {
-	return 20;
+	return 45;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 

@@ -10,7 +10,7 @@
                 
                 //Event listener for tile clicks
                 $(".tile").on("click",function(){
-                    window.location.href = "/?p=" + $(this).attr("id");
+                    window.location.href = "/?p=" + $(this).attr("id") + "#top";
                 });
                 
                 //Event listeners to open/close sidebar meny on small screens
@@ -20,8 +20,8 @@
                 
                 $(".sidebar").find("a").on("click",function(){
                     $(".sidebar").slideUp();
+                    });
                 });
-            });
         </script>
     </body>
 </html>
