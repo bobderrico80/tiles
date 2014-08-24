@@ -34,14 +34,14 @@ function sliderTimer() {
 
 //Slider Left Button
 $(".sliderButtonLeft").on("click",function(){
-    slideLeft();
+    slideRight();
     clearInterval(timer);
     timer = sliderTimer();
 });
 
 //Slider Right Button
 $(".sliderButtonRight").on("click",function(){
-    slideRight();
+    slideLeft();
     clearInterval(timer);
     timer = sliderTimer();
 });
