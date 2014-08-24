@@ -1,5 +1,5 @@
 <div class="sidebar dark">
-        <h1 class="sidebarHeading">Pages</h1>
+        <h1 class="sidebarHeading first">Pages</h1>
         <ul class="pages">
             <?php 
                 $pages = get_pages();
@@ -30,17 +30,7 @@
         </ul>
         
         <h1 class="sidebarHeading">Tags</h1>
-        <ul class="tags">
-            <?php
-                $tags = get_tags();
-                foreach ($tags as $tag) {
-                    $tagTitle = $tag->name;
-                    echo '<li><a href="' . get_tag_link($tag->term_id) . '">';
-                    echo $tag->name;
-                    echo '</a></li>';
+        <?php wp_tag_cloud(); ?>
 
-                }
-            ?>
-        </ul>
 </div>
 

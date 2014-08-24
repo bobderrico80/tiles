@@ -243,6 +243,16 @@ a:visited {
 .sidebarHeading {
     font-size:1.5em;
     margin-bottom:5px;
+    margin-top:30px;
+    background-image: url(swirl.png);
+    background-repeat:no-repeat;
+    background-size:25px;
+    background-position:0px 2px;
+    padding-left:30px
+}
+
+.first {
+    margin-top:0px;
 }
 
 .sidebar li {
@@ -260,6 +270,10 @@ a:visited {
 
 .summary {
     margin-bottom:50px;
+}
+
+.summaryTitle a:link, .summaryTitle a:visited {
+    color:#4F5C75;
 }
 
 .singleTitle {
@@ -296,6 +310,14 @@ a:visited {
     margin:0px;
 }
 
+.divider {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    height:30px;
+    margin-top:30px;
+}
+
 .pageNav {
     position:relative;
     height:1em;
@@ -315,7 +337,6 @@ a:visited {
 
 .comments {
     width:100%;
-    border-top:1px dashed black;
     padding-top:1em;
 }
 
@@ -351,7 +372,12 @@ a:visited {
 
 .footer {
     background-color:#10192D;
-    height:50px;
-    line-height:50px;
     text-align:center;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    font-size: .85em;
+}
+
+.footer p {
+    margin:0px;
 }

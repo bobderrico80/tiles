@@ -10,7 +10,7 @@
                                 the_post();
                     ?>
                     <div class="single" id="<?php the_ID();?>">
-                        <h1 class="singleTitle"><?php the_title();?></h1>
+                        <h1 class="singleTitle first"><?php the_title();?></h1>
                         <?php 
                         if (has_post_thumbnail()) {
                             $featuredImage = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
@@ -22,6 +22,7 @@
                         </div>
                         <p class="singleDate">Posted: <?php echo get_the_date('l, F j, Y, g:ia')?></p>
                         <p class="singleTags"><?php the_tags('<b>Tagged as: </b>'); ?></p>
+                        <img src="wp-content/themes/tiles/divider.png" class="divider" alt="divider">
                         <div class="pageNav">
                             <div class="pageNavPrevious">
                                 <?php previous_post_link(); ?>

@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri();?>">
+        <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <meta name="viewport" content="width=device-width"/>
         <meta charset="<?php bloginfo('charset'); ?>">
@@ -25,7 +26,7 @@
                 <div class="tileSection">
                     <div class="stickyTileSection">
                         <?php
-                        $page = get_page_by_title('REQUIRED READING');
+                        $page = get_page_by_title('Click Here for Fun!');
                         $featuredImage = wp_get_attachment_url(get_post_thumbnail_id($page->ID));
                         ?>
                         <div class="tile" id="<?php echo $page->ID;?>" style="background-image: url(<?php echo $featuredImage;?>)">

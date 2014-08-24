@@ -10,7 +10,7 @@
                                 the_post();
                     ?>
                     <div class="single" id="<?php the_ID();?>">
-                        <h1 class="singleTitle"><?php the_title();?></h1>
+                        <h1 class="singleTitle first"><?php the_title();?></h1>
                         <?php 
                         if (has_post_thumbnail()) {
                             $featuredImage = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));

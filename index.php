@@ -6,11 +6,12 @@
                 <div class="content light">
                     <?php
                         if (have_posts()) {
+                            $first = ' first';
                             while (have_posts()) {
                                 the_post();
                     ?>
                     <div class="summary" id="<?php the_ID();?>">
-                        <h1 class="summaryTitle">
+                        <h1 class="summaryTitle<?php echo $first; ?>">
                             <a href="<?php echo get_permalink(); ?>">
                                 <?php the_title();?>
                             </a>
@@ -37,8 +38,10 @@
                                 echo '</a>'
                             ?>
                         </p>
+                        <img src="wp-content/themes/tiles/divider.png" class="divider" alt="divider">
                     </div>
                     <?php
+                                $first = '';
                             } //end while
                     ?>
                     <div class="pageNav">
