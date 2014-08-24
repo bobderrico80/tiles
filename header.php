@@ -9,10 +9,18 @@
         <title><?php bloginfo('name'); wp_title('-',TRUE,'right'); ?></title>
     </head>
     <body <?php body_class(); ?>>
-        
+            <?php 
+                $type = '';
+                $showBack = '';
+                if (!is_home()) {
+                    $type = 'notHome';
+                    $showBack = 'showBack';
+                }
+            ?>
             <div class="header dark">
                 <div class="masthead">
-                    <img src="wp-content/themes/tiles/menu.png" alt="Menu" class="menu" title="Menu"/>
+                    <img src="wp-content/themes/tiles/menu.png" alt="Menu" class="menu icon" title="Menu"/>
+                    <img src="wp-content/themes/tiles/back.png" alt="Back" class="back icon <?php echo $showBack;?>" title="Back"/>
                     <a href="<?php echo home_url()?>">
                         <img 
                             src="<?php bloginfo('template_url');?>/header.png" 
@@ -24,7 +32,7 @@
                 </div>
             </div>
             <div class="pageWrapper">
-                <div class="tileSection">
+                <div class="tileSection <?php echo $type;?>">
                     <div class="stickyTileSection">
                         <?php
                         $page = get_page_by_title('Click Here for Fun!');

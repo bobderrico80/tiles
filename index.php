@@ -4,7 +4,6 @@
             <div class="body">
                 <?php get_sidebar(); ?>
                 <div class="content light">
-                    <a name="top"></a>
                     <?php
                         if (have_posts()) {
                             $first = ' first';
