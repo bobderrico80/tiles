@@ -53,6 +53,7 @@
                         </div>
                             <?php 
                             $args = array (
+                                'order'=>'ASC',
                                 'posts_per_page'=>10,
                                 'post__not_in' => get_option('sticky_posts')
                             );

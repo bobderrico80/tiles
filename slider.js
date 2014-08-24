@@ -27,7 +27,7 @@ function slideRight() {
 
 //function to set the slider timer
 function sliderTimer() {
-    return setInterval(function(){$(".sliderButtonLeft").click();},5000);
+    return setInterval(function(){$(".sliderButtonRight").click();},5000);
 }
 
 /*EVENT LISTENERS*/
