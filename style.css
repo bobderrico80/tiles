@@ -344,6 +344,10 @@ a:visited {
     right:0px;
 }
 
+.navSmall {
+    display:none;
+}
+
 .comments {
     width:100%;
     padding-top:1em;
@@ -426,6 +430,14 @@ a:visited {
     
     iframe {
         width:100%
+    }
+    
+    .navSmall {
+        display:inline-block;
+    }
+    
+    .navLarge {
+        display:none;
     }
     
 }
@@ -524,5 +536,13 @@ a:visited {
     
     iframe {
         width:100%
+    }
+    
+    .navSmall {
+        display:inline-block;
+    }
+    
+    .navLarge {
+        display:none;
     }
 }

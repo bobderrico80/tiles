@@ -28,11 +28,17 @@
                         <p class="singleTags"><?php the_tags('<b>Tagged as: </b>'); ?></p>
                         <img src="wp-content/themes/tiles/divider.png" class="divider" alt="divider">
                         <div class="pageNav">
-                            <div class="pageNavPrevious">
+                            <div class="pageNavPrevious navLarge">
                                 <?php previous_post_link(); ?>
                             </div>
-                            <div class="pageNavNext">
+                            <div class="pageNavPrevious navSmall">
+                                <?php previous_post_link('&laquo %link','Previous'); ?>
+                            </div>
+                            <div class="pageNavNext navLarge">
                                 <?php next_post_link(); ?>
+                            </div>
+                            <div class="pageNavNext navSmall">
+                                <?php next_post_link('%link &raquo','Next'); ?>
                             </div>
                         </div>
                         <div class="comments">
