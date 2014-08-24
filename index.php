@@ -17,12 +17,16 @@
                                 <?php the_title();?>
                             </a>
                         </h1>
-                        <?php 
+                        <?php
                         if (has_post_thumbnail()) {
-                            $featuredImage = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
+                            $featuredImage = wp_get_attachment_url(get_post_thumbnail_id());
+                            echo '<img src="' . $featuredImage . 
+                                    '" class="summaryImage ' . get_post(get_post_thumbnail_id())->post_excerpt . 
+                                    '" alt="' . get_the_title() . 
+                                    '" title="' . get_the_title() . '"/>';
                         } 
                         ?>
-                        <img src="<?php echo $featuredImage ?>" class="summaryImage" alt="<?php the_title(); ?>" title="<?php the_title(); ?>"/>
+                        
                         <div class="summaryContent">
                             <?php the_content("Read more...");?>
                         </div>

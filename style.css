@@ -295,6 +295,10 @@ a:visited {
     margin-bottom:20px;
 }
 
+.hide {
+    display:none;
+}
+
 .summaryDate {
     font-style:italic;
     margin:0px;
