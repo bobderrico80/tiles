@@ -12,6 +12,7 @@
         
             <div class="header dark">
                 <div class="masthead">
+                    <img src="wp-content/themes/tiles/menu.png" alt="Menu" class="menu" title="Menu"/>
                     <a href="<?php echo home_url()?>">
                         <img 
                             src="<?php bloginfo('template_url');?>/header.png" 
@@ -42,12 +43,12 @@
                         <div class="sliderButtonRight">
                             <div class="triangleRight"></div>
                         </div>
-                        <?php 
-                        $args = array (
-                            'posts_per_page'=>10,
-                            'post__not_in' => get_option('sticky_posts')
-                        );
-                        get_tiles($args);
-                        ?>
+                            <?php 
+                            $args = array (
+                                'posts_per_page'=>10,
+                                'post__not_in' => get_option('sticky_posts')
+                            );
+                            get_tiles($args);
+                            ?>
+                        </div>
                     </div>
-                </div>

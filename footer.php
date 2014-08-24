@@ -7,8 +7,19 @@
         <script src="wp-content/themes/tiles/slider.js" type="text/javascript"></script>
         <script>
             $(document).ready(function(){
-                $(".tile").bind("click",function(){
+                
+                //Event listener for tile clicks
+                $(".tile").on("click",function(){
                     window.location.href = "/?p=" + $(this).attr("id");
+                });
+                
+                //Event listeners to open/close sidebar meny on small screens
+                $(".menu").on("click",function(){
+                    $(".sidebar").slideToggle();
+                });
+                
+                $(".sidebar").find("a").on("click",function(){
+                    $(".sidebar").slideUp();
                 });
             });
         </script>

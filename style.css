@@ -6,14 +6,7 @@ Description: A responsive tile-based theme design
 Version: 1.0
 */
 
-/*
-Color scheme:
-light        { color: #7FA4C0 }
-medium-light { color: #507C9D }
-medium       { color: #346388 }	
-medium-dark  { color: #1F4F74 }
-dark         { color: #0E3A5C }
-*/
+/* General styles and screens larger than 1024 pixels */
 
 body {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
@@ -74,6 +67,9 @@ a:visited {
     background-repeat:no-repeat;
 }
 
+.menu {
+    display:none;
+}
 
 .headerImage {
     display:block;
@@ -92,6 +88,8 @@ a:visited {
     padding-top:15px;
     padding-bottom:15px;
     background-color:#344D80;
+    white-space:nowrap;
+    overflow:hidden;
 }
 
 .stickyTileSection {
@@ -161,6 +159,8 @@ a:visited {
     background-clip: border-box;
     background-repeat: no-repeat;
     background-size:249px;
+    background-position: center;
+    background-color:black;
     border-radius:20px;
     display:inline-block;
     width:249px;
@@ -361,6 +361,10 @@ a:visited {
     border-radius:10px;
 }
 
+.comment-respond textarea {
+    width:80%
+}
+
 #comment {
     display:block;
 }
@@ -380,4 +384,110 @@ a:visited {
 
 .footer p {
     margin:0px;
+}
+
+/* For screens between 1024 and 401 pixels wide */
+@media screen and (max-width: 1024px) and (min-width: 401px) {
+    
+    .masthead {
+        background:url(header-med.png) center top;
+        height:300px;
+    }
+
+    .pageWrapper {
+        width:100%;
+    }
+    
+    .tileSection {
+    width:100%;
+    }
+    
+}
+
+/* For screens 400 pixels or narrower */
+@media screen and (max-width: 400px) {
+    
+    .masthead {
+        background:url(header-small.png) center top;
+        height:200px;
+    }
+    
+    .menu {
+        display:inline-block;
+        position:absolute;
+        width:50px
+    }
+    
+    .sidebar {
+        display:none;
+        position:absolute;
+        top:40px;
+        z-index:1;
+    }
+    
+    .pageWrapper {
+        width:100%;
+    }
+    
+    .tileSection {
+        width:100%;
+        height:320px;
+        padding:0px;
+        z-index:0;
+    }
+    
+    .stickyTileSection {
+        display:none;
+    }
+    
+    .sliderTileSection {
+        width:100%;
+        white-space:nowrap;
+        margin:0px;
+        height:320px;
+    }
+    
+    .tile {
+        display:none;
+    }
+    
+    .tileWide {
+        width:100%;
+        padding:0px;
+        margin:0px;
+        display:inline-block;
+        border-radius:0px;
+        border:none;
+        height:320px;
+    }
+    
+    .tileWide:hover {
+        border:none
+    }
+    
+    .tileOverlay {
+        padding:10px;
+        height:320px;
+    }
+    
+    .sliderButtonLeft {
+        border-radius:0px;
+        height:320px;
+    }
+    
+    .triangleLeft {
+        margin-top:135px;
+    }
+    
+    .sliderButtonRight {
+        height:320px;
+    }
+    
+    .triangleRight {
+        margin-top:135px;
+    }
+    
+    .footer {
+        font-size:.6em
+    }
 }
