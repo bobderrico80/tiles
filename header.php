@@ -8,7 +8,7 @@
         <title><?php bloginfo('name'); wp_title('-',TRUE,'right'); ?></title>
     </head>
     <body <?php body_class(); ?>>
-        <div class="pageWrapper">
+        
             <div class="header dark">
                 <div class="masthead">
                     <a href="<?php echo home_url()?>">
@@ -20,6 +20,8 @@
                         />
                     </a>
                 </div>
+            </div>
+            <div class="pageWrapper">
                 <div class="tileSection">
                     <div class="stickyTileSection">
                         <?php
@@ -48,4 +50,3 @@
                         ?>
                     </div>
                 </div>
-            </div>
