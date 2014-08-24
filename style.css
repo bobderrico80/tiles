@@ -113,6 +113,7 @@ a:visited {
     height:160px;
     margin-top:5px;
     margin-bottom:5px;
+    margin-left:2.5px;
     position:absolute;
     background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1));
     border-radius: 20px 0px 0px 20px;
@@ -238,6 +239,10 @@ a:visited {
 .sidebar ul {
     list-style:none;
     padding:0px;
+}
+
+.sidebar li {
+    margin-bottom:10px;
 }
 
 .sidebarHeading {
@@ -402,8 +407,25 @@ a:visited {
         width:100%;
     }
     
+    .sidebar {
+        width:25%;
+    }
+    
     .tileSection {
-    width:100%;
+        width:100%;
+    }
+    
+    .sliderTileSection {
+        position:static;
+    }
+    
+    img.size-medium {
+        width:60%;
+        height:auto;
+    }
+    
+    iframe {
+        width:100%
     }
     
 }
@@ -493,5 +515,14 @@ a:visited {
     
     .footer {
         font-size:.6em
+    }
+    
+    img.size-medium {
+        width:80%;
+        height:auto;
+    }
+    
+    iframe {
+        width:100%
     }
 }
