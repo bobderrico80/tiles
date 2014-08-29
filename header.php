@@ -19,8 +19,8 @@
             ?>
             <div class="header dark">
                 <div class="masthead">
-                    <img src="wp-content/themes/tiles/menu.png" alt="Menu" class="menu icon" title="Menu"/>
-                    <img src="wp-content/themes/tiles/back.png" alt="Back" class="back icon <?php echo $showBack;?>" title="Back"/>
+                    <img src="<?php bloginfo('template_url');?>/menu.png" alt="Menu" class="menu icon" title="Menu"/>
+                    <img src="<?php bloginfo('template_url');?>/back.png" alt="Back" class="back icon <?php echo $showBack;?>" title="Back"/>
                     <a href="<?php echo home_url()?>">
                         <img 
                             src="<?php bloginfo('template_url');?>/header.png" 

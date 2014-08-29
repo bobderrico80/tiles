@@ -25,7 +25,7 @@
                         </div>
                         <p class="singleDate">Posted: <?php echo get_the_date('l, F j, Y, g:ia')?></p>
                         <p class="singleTags"><?php the_tags('<b>Tagged as: </b>'); ?></p>
-                        <img src="wp-content/themes/tiles/divider.png" class="divider" alt="divider">
+                        <img src="<?php bloginfo('template_url')?>/divider.png" class="divider" alt="divider">
                         <div class="pageNav">
                             <div class="pageNavPrevious navLarge">
                                 <?php previous_post_link(); ?>

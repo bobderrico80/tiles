@@ -42,7 +42,7 @@
                                 echo '</a>'
                             ?>
                         </p>
-                        <img src="wp-content/themes/tiles/divider.png" class="divider" alt="divider">
+                        <img src="<?php bloginfo('template_url')?>/divider.png" class="divider" alt="divider">
                     </div>
                     <?php
                                 $first = '';

@@ -2,7 +2,7 @@
         <h1 class="sidebarHeading first">Pages</h1>
         <ul class="pages">
             <?php 
-                $pages = get_pages();
+                $pages = get_pages(array('sort_column'=>'menu_order'));
                 foreach ($pages as $page) {
                     $pageTitle = $page->post_title;
                     echo '<li><a href="' . get_page_link($page) . '">';
