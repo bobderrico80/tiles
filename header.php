@@ -5,8 +5,11 @@
         <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <meta name="viewport" content="width=device-width"/>
-        <meta charset="<?php bloginfo('charset'); ?>">
-        <title><?php bloginfo('name'); wp_title('-',TRUE,'right'); ?></title>
+        <meta charset="<?php bloginfo('charset'); ?>"/>
+        <meta property="og:title" content="<?php bloginfo('name'); wp_title(' - ',TRUE,'left'); ?>"/>
+        <meta property="og:description" content="Cute Tagline Here. Tomorrow."/>
+        <meta property="og:image" content="<?php bloginfo('template_url');?>/header-small.png"/>
+        <title><?php bloginfo('name'); wp_title(' - ',TRUE,'left'); ?></title>
     </head>
     <body <?php body_class(); ?>>
             <?php 

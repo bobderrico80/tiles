@@ -265,6 +265,16 @@ a:visited {
     padding-left:10px;
 }
 
+.ssba {
+    text-align:right
+}
+
+.ssba img {
+    width:30px;
+    margin-left:3px;
+    
+}
+
 .content {
     display:table-cell;
     background-color:white;
