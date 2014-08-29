@@ -1,7 +1,7 @@
             <div class="footer dark">
                 <p>Blog Posts and Pages &copy Copyright <?php echo date('Y'); ?> <a href="mailto:meg@notyourmommysblog.com">Not Your Mommy's Blog</a></p>
                 <p>Theme Design &copy Copyright <?php echo date('Y');?> <a href="http://www.derricowebsolutions.com">D'Errico Web Solutions</a></p>
-                <p>Powered by <a href="http://www.wordpress.org" target="_blank">WordPress</a> | <a href="wp-admin/">Administrator Login</a></p>
+                <p>Powered by <a href="http://www.wordpress.org" target="_blank">WordPress</a> | <a href="<?php bloginfo('url');?>/wp-admin/">Administrator Login</a></p>
             </div>
         </div> <?php //close pageWrapper div?>
         <script src="<?php bloginfo('template_url')?>/slider.js" type="text/javascript"></script>
