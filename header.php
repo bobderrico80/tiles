@@ -8,7 +8,6 @@
         <meta charset="<?php bloginfo('charset'); ?>"/>
         <meta property="og:title" content="<?php bloginfo('name'); wp_title(' - ',TRUE,'left'); ?>"/>
         <meta property="og:description" content="Cute Tagline Here. Tomorrow."/>
-        <meta property="og:image" content="<?php bloginfo('template_url');?>/header-small.png"/>
         <title><?php bloginfo('name'); wp_title(' - ',TRUE,'left'); ?></title>
     </head>
     <body <?php body_class(); ?>>
@@ -56,7 +55,6 @@
                         </div>
                             <?php 
                             $args = array (
-                                'order'=>'ASC',
                                 'posts_per_page'=>10,
                                 'post__not_in' => get_option('sticky_posts')
                             );
