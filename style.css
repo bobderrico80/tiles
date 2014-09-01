@@ -315,6 +315,25 @@ a:visited {
     display:none;
 }
 
+.aligncenter {
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+    text-align: center;
+}
+
+iframe {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+img[class*='wp-image'] {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
 .summaryDate {
     font-style:italic;
     margin:0px;
@@ -566,7 +585,12 @@ a:visited {
     }
     
     iframe {
-        width:100%
+        width:100%;
+    }
+    
+    img[class*='wp-image'] {
+        width:auto;
+        height:auto;
     }
     
     .navSmall {
