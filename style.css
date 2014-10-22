@@ -580,7 +580,8 @@ img[class*='wp-image'] {
     }
 
     img.size-medium,
-    img.aligncenter {
+    img.aligncenter,
+    img.alignnone {
         width:80%;
         height:auto;
     }
