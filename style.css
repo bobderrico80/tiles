@@ -574,6 +574,22 @@ img[class*='wp-image'] {
     .triangleRight {
         margin-top:135px;
     }
+    
+    .singleTitle, .summaryTitle {
+        font-size: 1.25em;
+    }
+    
+    h1 {
+        font-size:1.25em;
+    }
+    
+    h2 {
+        font-size:1.15em;
+    }
+    
+    h3 {
+        font-size:1.05em;
+    }
 
     .footer {
         font-size:.6em
