@@ -37,7 +37,7 @@
                 <div class="tileSection <?php echo $type;?>">
                     <div class="stickyTileSection">
                         <?php
-                        $page = get_page_by_title('Click Here for Fun!');
+                        $page = get_post(133,'OBJECT');
                         $featuredImage = wp_get_attachment_url(get_post_thumbnail_id($page->ID));
                         ?>
                         <div class="tile" id="<?php echo $page->ID;?>" style="background-image: url(<?php echo $featuredImage;?>)">
