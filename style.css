@@ -265,6 +265,11 @@ a:visited {
     padding-left:10px;
 }
 
+.tmbBanner {
+    text-align:center;
+    margin-top:40px
+}
+
 .ssba {
     text-align:right
 }

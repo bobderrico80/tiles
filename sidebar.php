@@ -31,6 +31,9 @@
         
         <h1 class="sidebarHeading">Tags</h1>
         <?php wp_tag_cloud(); ?>
-
+        <div class="tmbBanner">
+            <a href="http://www.topmommyblogs.com/" target="_blank"><img border="0" src="http://www.topmommyblogs.com/directory/images/banners/TMB-approved-150.png" title="Please click! A visit a day boosts my blog ranking at Top Mommy Blogs - The Best Mommy Blog Directory Ever!" alt="Please click! A visit a day boosts my blog ranking at Top Mommy Blogs - The Best Mommy Blog Directory Ever!" width="150" height="150"></a>
+        </div>
+        
 </div>
 
